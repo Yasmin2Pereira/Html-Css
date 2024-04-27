@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem dinamica</h1>
+    <p>Tente abrir esse site em varios dispositivos diferentes ou simplesmente aumente e diminiua o tamamnho do seu navegador.</p>
+
+    <picture>
+        <source media="(max-width: 750px)" srcset="Imagem/Imagem-P.jpeg" type="Image/jpeg">
+        <source media="(max-width: 1050px)" srcset="Imagem/Imagem-M.jpeg" type="Image/jpeg">
+        <img src="Imagem/Imagem-G.png" alt="Imagem flexivel">
+    </picture>
+
+    <h1>Reproduzindo audio</h1>
+    <p>Vamos aprender a reproduzir audios em HTMLS5</p>
+    <audio src="midia/Ohana  Lilo & Stitch  Shiny.mp3" controls></audio>
+    
+    <audio> <!--Toca automaticamente ao abrir o site-->
+        <source src="midia/Ohana  Lilo & Stitch  Shiny.mp3" type="audio/mpeg"> <!--mpeg/ogg/wav, se não for então o pc não roda audio-->
+    </audio>
+
+</body>
+</html>
